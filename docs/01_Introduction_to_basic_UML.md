@@ -44,3 +44,9 @@
 3. This creates a fresh new class. Name this new class "Customer"
    1. ![Newly created class](images/0002_3_newly_created_class.png)
    2. ![name class Customer](images/0002_4_name_class.png)
+4. Next add a new attribute to this class using the context menue of the element and name it "custID"
+   1. ![add attribute to class](images/0002_5_add_attribute_to_class.png)
+   2. ![newly created attribute](images/0002_6_newly_created_attribute.png)
+   3. ![name attribute](images/0002_7_name_attribute.png)
+5. Now create an additional attribute and name it "custName"
+   1. ![name attribute](images/0002_8_add_another_attribute_and_name.png)
