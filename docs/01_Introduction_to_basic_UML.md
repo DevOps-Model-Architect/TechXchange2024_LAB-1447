@@ -18,16 +18,29 @@
 
 ## Create a project
 
-1. Click on Create a Project link
-   1. ![Create a new Project](images/0000_Create_Project.png)
-2. In the wizard search and select the modeling project type
-   1. ![Select Projecttype](images/0001_SelectProjectType.png)
-   2. ![Select Modelingproject](images/0002_ModelingProject.png)
-3. Provide a name for your new project.
-   1. ![Projectname](images/0003_ProjectName.png)
-4. Select "General" from Categegories and "Blank Package" from Templates
-   1. ![BlankPackage](images/0004_BlankPackage.png)
-5. Have a look at your freshly created new Project
-   1. ![Freshly created Project](images/0005_NewlyCreatedProject.png)
+1. Click on Create a new Model Project or Create Project
+   1. ![Create a new Project](images/0001_1_Create_Model_Project.png)
+   2. ![Create a new Project](images/0001_1_Create_Project.png)
+2. In the case you selected "Create a Project" a wizard will be shown.
+3. Search and select the modeling project type
+   1. ![Select Projecttype](images/0001_2_SelectProjectType.png)
+   2. ![Select Modelingproject](images/0001_3_ModelingProject.png)
+4. Provide a name for your new project.
+   1. ![Projectname](images/0001_4_ProjectName.png)
+5. Select "General" from Categegories and "Blank Package" from Templates
+   1. ![BlankPackage](images/0001_5_BlankPackage.png)
+6. Have a look at your freshly created new Project
+   1. ![Freshly created Project](images/0001_6_NewlyCreatedProject.png)
 
 ## Basic UML Models and Basic UML Diagrams
+
+1. If Project is collapsed, click on the > symbols to uncollapse Project and Elements
+   1. ![Project Explorer](images/0001_7_project_explorer.png)
+   2. ![Uncollapse Project](images/0001_8_uncollapse_project.png)
+   3. ![Uncollapse Models](images/0001_9_uncollapse_models.png)
+2. Add new Class to Model by right clicking the Package and select the class entry in the UML menu
+   1. ![Right Click on Package](images/0002_1_add_uml_element.png)
+   2. ![Right Click on Package](images/0002_2_add_class.png)
+3. This creates a fresh new class. Name this new class "Customer"
+   1. ![Newly created class](images/0002_3_newly_created_class.png)
+   2. ![name class Customer](images/0002_4_name_class.png)
