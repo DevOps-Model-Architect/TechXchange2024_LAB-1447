@@ -50,3 +50,11 @@
    3. ![name attribute](images/0002_7_name_attribute.png)
 5. Now create an additional attribute and name it "custName"
    1. ![name attribute](images/0002_8_add_another_attribute_and_name.png)
+6. Create a new Diagram to manage all customer related model artifacts and name it "CustomerStore_Class"
+   1. ![create new diagram for customer](images/0003_1_add_class_diagram.png)
+   2. ![newly created diagram](images/0003_2_newly_created_diagram.png)
+   3. ![name the new diagram](images/0003_3_name_diagram.png)
+7. Add our "Customer" class to this diagram by using the context menue of the item
+   1. ![add class to diagram using context menu](images/0003_4_add_existing_class_to_diagram.png)
+   2. ![class is added to diagram](images/0003_5_existing_class_added.png)
+8. Don't forget to save all your changes!
