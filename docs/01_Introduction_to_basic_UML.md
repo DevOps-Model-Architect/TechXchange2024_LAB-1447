@@ -1,6 +1,10 @@
 # Introduction
 
-## Switch to Modeling Perspective
+## Short introduction to Lab 1
+
+What we want to achieve in this lab...
+
+### Switch to Modeling Perspective
 
 1. After a fresh installation of Eclipse you will get the Welcome Page
    1. ![Welcome Page](images/0000_Eclipse_Welcome.png)
@@ -16,7 +20,7 @@
    9. The Modeling Perspetive opens. You can also switch Perspectives using the icon on the top right corner
    10. ![Open Perspective Other](images/0000_5_Perspective.png)
 
-## Create a project
+### Create a project
 
 1. Click on Create a new Model Project or Create Project
    1. ![Create a new Project](images/0001_1_Create_Model_Project.png)
@@ -32,7 +36,7 @@
 6. Have a look at your freshly created new Project
    1. ![Freshly created Project](images/0001_6_NewlyCreatedProject.png)
 
-## Basic UML Models and Basic UML Diagrams
+### Basic UML Models and Basic UML Diagrams
 
 1. If Project is collapsed, click on the > symbols to uncollapse Project and Elements
    1. ![Project Explorer](images/0001_7_project_explorer.png)
@@ -58,3 +62,54 @@
    1. ![add class to diagram using context menu](images/0003_4_add_existing_class_to_diagram.png)
    2. ![class is added to diagram](images/0003_5_existing_class_added.png)
 8. Don't forget to save all your changes!
+
+### How to import existing artifacts
+
+1. Right click Project to open context menu and select Import
+   1. ![Context Menue for importing](images/0004_1_ImportArtifact.png)
+2. In this lab we want to import from the filesystem, please select "file system" in the wizard dialog
+   1. ![Wizard - select "file system"](images/0004_2_ImportFileSystem.png)
+   2. click on Next
+3. In the file system dialog browse for the "Simple-Model" folder from your repository
+   1. ![File System dialog](images/0004_3_SelectDirectory_1.png)
+   2. click on Browse and select "Simple-Model" 
+   3. ![Select folder](images/0004_3_SelectDirectory_2.png)
+   4. click on Open
+4. The Import dialog opens
+   1. ![Import Simple-Model](images/0004_4_ImportModel_1.png)
+5. Select the folder on the left (checkbox) and the model element will be automatically selected.
+   1. ![Import Simple-Model folder selected](images/0004_4_ImportModel_2.png)
+6. Click on Finish to start the import
+7. The modeling artifact is imported and "SimpleUMLModel" is shown.
+   1. ![Import Result](images/0004_5_ImportResult.png)
+8. Doublelick on the newly created Model and a migration dialog will open as the artifacts were created with older version.
+   1. ![Profile Migration 1](images/0004_6_OpenModel_1.png)
+   2. Just accept the default settings and the diagram will be opened
+   3. ![open simple model 1](images/0004_6_OpenModel_2.png)
+9. To have a better view, right click on the canvas to open context menue ans select "Arrange All"
+   1. ![Arrange on canvas](images/0004_6_OpenModel_3.png)
+   2. ![result of new arrangement](images/0004_6_OpenModel_4.png)
+
+### How to add a new UML artifact to existing diagram
+
+1. Adding new UML artifacts to a diagram can be done by using the "Palette" or the context menue of the diagram.
+2. First we will use the "Palette"
+   1. On the right side of DevOps Model Architect you will find the "Palette" menue.
+   2. Click on "Class" entry to get all UML class types available
+      1. ![Add new Class from Palette](images/0004_7_AddModelElement_1.png)
+   3. Drag and drop the "Class" element from the Palette to the open diagram.
+   4. A fresh new class is added and the name is selected for change. Change the name to "APPF2"
+      1. ![new class and name](images/0004_7_AddModelElement_2.png)
+   5. Now we want to create a relationship from "APPF2" to "AppFunction1"
+      1. click and drag the "incomming" icon to "AppFunction1"
+      2. ![new class and name](images/0004_7_AddModelElement_3.png)
+      3. ![new class and name](images/0004_7_AddModelElement_4.png)
+   6. A new dialog opens and use "Create Instance" type
+      1. ![new relation](images/0004_7_AddModelElement_5.png)
+   7. The relation "create instance" is established between these two elements
+      1. ![final relation](images/0004_7_AddModelElement_6.png)
+   8. Do not forget to save your changes!
+
+## Conclusion of Lab 1
+
+In this Lab we have been introduced how to use DevOps Model Architect to create a project, work on simple diagrams and import existing artifacts.
