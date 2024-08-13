@@ -4,11 +4,13 @@
 
 What we want to achieve in this lab a short introduction how to use DevOps Model Architect. You will get an overview how to use the Modeling Perspective and a simple intro into UML Models and Diagrams.
 
-### Switch to Modeling Perspective
+### Start DevOps Model Architect and Switch to Modeling Perspective
 
-1. After a fresh installation of Eclipse you will get the Welcome Page
+1. Doubleclick on the icon for "IBM DevOps Model Architect" on the Desktop
+   1. ![dma](images/Lab_0/0000_0_1_Desktop_1.png)
+2. After a fresh installation of Eclipse you will get the Welcome Page
    1. ![Welcome Page](images/Lab_1/0000_1_Eclipse_Welcome.png)
-2. Next switch to the Modeling Perspective
+3. Next switch to the Modeling Perspective
    1. Click on the Menu "Window" on top of Eclipse
    2. ![Menu Window](images/Lab_1/0000_1_Perspective_1.png)
    3. Click on Open Perspective then on Other
