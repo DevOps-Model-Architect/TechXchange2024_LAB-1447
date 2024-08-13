@@ -7,18 +7,18 @@ What we want to achieve in this lab a short introduction how to use DevOps Model
 ### Switch to Modeling Perspective
 
 1. After a fresh installation of Eclipse you will get the Welcome Page
-   1. ![Welcome Page](images/0000_Eclipse_Welcome.png)
+   1. ![Welcome Page](images/0000_1_Eclipse_Welcome.png)
 2. Next switch to the Modeling Perspective
    1. Click on the Menu "Window" on top of Eclipse
-   2. ![Menu Window](images/0000_1_Perspective.png)
+   2. ![Menu Window](images/0000_1_Perspective_1.png)
    3. Click on Open Perspective then on Other
-   4. ![Open Perspective Other](images/0000_2_Perspective.png)
+   4. ![Open Perspective Other](images/0000_1_Perspective_2.png)
    5. Dialog opens with list of perspectives
-   6. ![Open Perspective Other](images/0000_3_Perspective.png)
+   6. ![Open Perspective Other](images/0000_1_Perspective_3.png)
    7. Scroll down and Select "Modeling" from the list
-   8. ![Open Perspective Other](images/0000_4_Perspective.png)
+   8. ![Open Perspective Other](images/0000_1_Perspective_4.png)
    9. The Modeling Perspetive opens. You can also switch Perspectives using the icon on the top right corner
-   10. ![Open Perspective Other](images/0000_5_Perspective.png)
+   10. ![Open Perspective Other](images/0000_1_Perspective_5.png)
 
 ### Create a project
 
