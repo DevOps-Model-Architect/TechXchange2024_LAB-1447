@@ -1,15 +1,15 @@
 # Introduction
 
-## Short introduction to Lab 1
+## Lab 1: Basic usage and introduction to UML Models and Diagrams
 
-What we want to achieve in this lab...
+What we want to achieve in this lab a short introduction how to use DevOps Model Architect. You will get an overview how to use the Modeling Perspective and a simple intro into UML Models and Diagrams.
 
 ### Switch to Modeling Perspective
 
 1. After a fresh installation of Eclipse you will get the Welcome Page
    1. ![Welcome Page](images/0000_Eclipse_Welcome.png)
 2. Next switch to the Modeling Perspective
-   1. Click on the Menu "Window" on top of Eclipse 
+   1. Click on the Menu "Window" on top of Eclipse
    2. ![Menu Window](images/0000_1_Perspective.png)
    3. Click on Open Perspective then on Other
    4. ![Open Perspective Other](images/0000_2_Perspective.png)
@@ -72,7 +72,7 @@ What we want to achieve in this lab...
    2. click on Next
 3. In the file system dialog browse for the "Simple-Model" folder from your repository
    1. ![File System dialog](images/0004_3_SelectDirectory_1.png)
-   2. click on Browse and select "Simple-Model" 
+   2. click on Browse and select "Simple-Model"
    3. ![Select folder](images/0004_3_SelectDirectory_2.png)
    4. click on Open
 4. The Import dialog opens

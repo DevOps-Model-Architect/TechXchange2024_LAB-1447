@@ -4,3 +4,4 @@
 
 This repository contains the LAB documentation and sample files.
 
+The full documentation with the Labs is [here](docs/index.md).
