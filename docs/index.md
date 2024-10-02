@@ -6,5 +6,9 @@
 
 #### Introduction
 
-[Lab 00](00_Cloning_Repository.md)
-[Lab 01](01_Introduction_to_basic_UML.md)
+[**Lab 00:** Cloning the GitHub Repository](00_Cloning_Repository.md)
+
+[**Lab 01:** Introduction to basic UML](01_Introduction_to_basic_UML.md)
+
+[**Lab 02:** Introduction to basic BPMN](02_Introduction_to_basic_BPMN.md)
+
