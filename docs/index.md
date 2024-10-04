@@ -12,3 +12,5 @@
 
 [**Lab 02:** Introduction to basic BPMN](02_Introduction_to_basic_BPMN.md)
 
+[**Lab 03:** Modeling for OpenAPI](03_Modeling_for_OpenAPI.md)
+
