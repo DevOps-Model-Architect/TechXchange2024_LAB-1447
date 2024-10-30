@@ -1,6 +1,6 @@
-# Introduction
+# Lab 1
 
-## Lab 1: Basic usage and introduction to UML Models and Diagrams
+## Basic usage and introduction to UML Models and Diagrams
 
 What we want to achieve in this lab a short introduction how to use DevOps Model Architect. You will get an overview how to use the Modeling Perspective and a simple intro into UML Models and Diagrams.
 
@@ -12,7 +12,7 @@ What we want to achieve in this lab a short introduction how to use DevOps Model
 
 2. Select a workspace folder for Eclipse. You can for example call it `dma_workspace_YOURNAME`.
 
-   ![](images/Lab_1/0000_1_Workspace_Dialog.png)
+   ![Eclipse Workspace Dialog](images/Lab_1/0000_1_Workspace_Dialog.png)
 
 3. The first time you open a new workspace you will get the Welcome Page. Close it by pressing the **Workbench** button in the upper right corner.
 
@@ -21,23 +21,23 @@ What we want to achieve in this lab a short introduction how to use DevOps Model
 4. Next switch to the Modeling Perspective
    1. Click on the Menu "Window" on top of Eclipse
 
-   ![Menu Window](images/Lab_1/0000_1_Perspective_1.png)
+      ![Menu Window](images/Lab_1/0000_1_Perspective_1.png)
 
    2. Click on Open Perspective then on Other
 
-   ![Open Perspective Other](images/Lab_1/0000_1_Perspective_2.png)
+      ![Open Perspective Other](images/Lab_1/0000_1_Perspective_2.png)
 
    3. Dialog opens with list of perspectives
 
-   ![Open Perspective Other](images/Lab_1/0000_1_Perspective_3.png)
+      ![Open Perspective Other](images/Lab_1/0000_1_Perspective_3.png)
 
    4. Scroll down and Select "Modeling" from the list
 
-   ![Open Perspective Other](images/Lab_1/0000_1_Perspective_4.png)
+      ![Open Perspective Other](images/Lab_1/0000_1_Perspective_4.png)
 
    5. The Modeling Perspetive opens. You can also switch Perspectives using the icon on the top right corner
 
-   ![Open Perspective Other](images/Lab_1/0000_1_Perspective_5.png)
+      ![Open Perspective Other](images/Lab_1/0000_1_Perspective_5.png)
 
 ### Create a project
 
@@ -125,7 +125,7 @@ What we want to achieve in this lab a short introduction how to use DevOps Model
 2. In this lab we want to import from the filesystem, please select "file system" in the wizard dialog
 
    ![Wizard - select "file system"](images/Lab_1/0004_2_ImportFileSystem.png)
-   
+
    click on **Next**
 3. In the file system dialog browse for the "Simple-Model" folder from your repository
 
@@ -191,7 +191,7 @@ What we want to achieve in this lab a short introduction how to use DevOps Model
    7. The relation "create instance" is established between these two elements
 
       ![final relation](images/Lab_1/0004_7_AddModelElement_6.png)
-      
+
    8. Do not forget to save your changes!
 
 ## Conclusion of Lab 1

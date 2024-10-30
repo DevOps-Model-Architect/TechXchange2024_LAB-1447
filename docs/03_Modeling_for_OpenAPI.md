@@ -1,6 +1,6 @@
-# Introduction
+# Lab 3
 
-## Lab 3: Modeling for OpenAPI
+## Modeling for OpenAPI
 
 OpenAPI is a standard, programming language-agnostic interface description for HTTP APIs. In this lab you will use DMA to create a model representation of an OpenAPI YAML file, and visualize it in a class diagram.
 

@@ -1,6 +1,6 @@
-# Clone Repository
+# Lab 0
 
-## Lab 0: Cloning the GitHub Repository
+## Cloning the GitHub Repository
 
 ### Logging into Lab environment
 
@@ -34,7 +34,7 @@
    2. ![configure git with no login in](images/Lab_0/0000_0_3_GH_Desktop_2.png)
    3. Press Finish
 4. In the next dialog step you will be asked if you want to clone an existing repository, create on or use a local one
-   1. ![](images/Lab_0/0000_0_3_GH_Desktop_3.png)
+   1. ![GitHub Desktop - Let's get started](images/Lab_0/0000_0_3_GH_Desktop_3.png)
 5. Click on "Clone a repository from internet" and in the next dialog step select the tab "URL"
    1. here paset the URL you have copied before and either select the default local folder or provide your own
    2. ![provide url and local folder](images/Lab_0/0000_0_3_GH_Desktop_4.png)

@@ -15,4 +15,3 @@
 [**Lab 03:** Modeling for OpenAPI](03_Modeling_for_OpenAPI.md)
 
 [**Lab 04:** Modeling for Java Developers](04_Modeling_for_Java.md)
-

@@ -1,6 +1,6 @@
-# Introduction
+# Lab 4
 
-## Lab 4: Modeling for Java Developers
+## Modeling for Java Developers
 
 In this lab we will look at some scenarios where DMA can help you when developing Java applications.
 
@@ -24,7 +24,7 @@ In this lab we will look at some scenarios where DMA can help you when developin
 
    ![Java project](images/Lab_4/0000_4_JavaProject.png)
 
-The purpose of this lab is not to build the Java code so don't worry about the Java build problems that are reported on the project. 
+The purpose of this lab is not to build the Java code so don't worry about the Java build problems that are reported on the project.
 
 ### Visualize Java Code in Diagrams
 
@@ -40,7 +40,7 @@ The purpose of this lab is not to build the Java code so don't worry about the J
 
    ![class diagram](images/Lab_4/0001_3_ClassDiagram.png)
 
-Note that DMA has created this class diagram as a visualization of the Java code, without first creating a model for it. You can use the diagram as a means to navigate around in the Java code and even to edit it.
+   Note that DMA has created this class diagram as a visualization of the Java code, without first creating a model for it. You can use the diagram as a means to navigate around in the Java code and even to edit it.
 
 4. Double-click on symbols in the class diagram to navigate to the corresponding Java types. You can also double-click on attributes and methods to navigate to them.
 
@@ -48,7 +48,7 @@ Note that DMA has created this class diagram as a visualization of the Java code
 
    ![edit Java method](images/Lab_4/0001_4_EditInClassDiagram.png)
 
-5. Double-click on the "getType()" method to confirm that your comment was added in the Java method:
+6. Double-click on the "getType()" method to confirm that your comment was added in the Java method:
 
    ![edited Java method](images/Lab_4/0001_5_EditedJavaMethod.png)
 
@@ -82,7 +82,7 @@ Note that DMA has created this class diagram as a visualization of the Java code
 
    ![visualized model](images/Lab_4/0003_1_VisualizedModel.png)
 
-Note the difference between this visualization and the one you created from the Java code previously. While the former was a visualization of the Java code, this one shows model elements that you can work with just like any other model. 
+   Note the difference between this visualization and the one you created from the Java code previously. While the former was a visualization of the Java code, this one shows model elements that you can work with just like any other model.
 
 3. Select the "Point" class and click the **Documentation** tab in the **Properties view**. Edit the documentation for the class:
 

@@ -1,6 +1,6 @@
-# Introduction
+# Lab 2
 
-## Lab 2: BPMN Introduction
+## BPMN Introduction
 
 BPMN (Business Process Model and Notation) is a standard for describing business processes. In this lab you will use DMA to create a BPMN model and diagram by importing a textual description of a business process.
 For this lab the required environment has been setup. If you want to try it in your own environment, please follow this [setup documentation](https://www.ibm.com/docs/en/dma?topic=diagrams-importing-textual-document-bpmn).
