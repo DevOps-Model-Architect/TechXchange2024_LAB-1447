@@ -1,0 +1,811 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../00_Cloning_Repository/">
+      
+      
+        <link rel="next" href="../02_Introduction_to_basic_BPMN/">
+      
+      
+      <link rel="icon" href="../None">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
+    
+    
+      
+        <title>Lab 1 - TechXchange 2024 - Lab 1447</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#lab-1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="TechXchange 2024 - Lab 1447" class="md-header__button md-logo" aria-label="TechXchange 2024 - Lab 1447" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            TechXchange 2024 - Lab 1447
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Lab 1
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="teal"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="teal"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  TechXchange Lab 1447
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../00_Cloning_Repository/" class="md-tabs__link">
+        
+  
+    
+  
+  Lab 0
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+    
+  
+  Lab 1
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../02_Introduction_to_basic_BPMN/" class="md-tabs__link">
+        
+  
+    
+  
+  Lab 2
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../03_Modeling_for_OpenAPI/" class="md-tabs__link">
+        
+  
+    
+  
+  Lab 3
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../04_Modeling_for_Java/" class="md-tabs__link">
+        
+  
+    
+  
+  Lab 4
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="TechXchange 2024 - Lab 1447" class="md-nav__button md-logo" aria-label="TechXchange 2024 - Lab 1447" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    TechXchange 2024 - Lab 1447
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TechXchange Lab 1447
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../00_Cloning_Repository/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lab 0
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Lab 1
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Lab 1
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#basic-usage-and-introduction-to-uml-models-and-diagrams" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic usage and introduction to UML Models and Diagrams
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Basic usage and introduction to UML Models and Diagrams">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#start-devops-model-architect-and-switch-to-modeling-perspective" class="md-nav__link">
+    <span class="md-ellipsis">
+      Start DevOps Model Architect and Switch to Modeling Perspective
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-a-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create a project
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#basic-uml-models-and-basic-uml-diagrams" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic UML Models and Basic UML Diagrams
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-import-existing-artifacts" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to import existing artifacts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-add-a-new-uml-artifact-to-existing-diagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to add a new UML artifact to existing diagram
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion-of-lab-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion of Lab 1
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_Introduction_to_basic_BPMN/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lab 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_Modeling_for_OpenAPI/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lab 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_Modeling_for_Java/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lab 4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="lab-1">Lab 1</h1>
+<h2 id="basic-usage-and-introduction-to-uml-models-and-diagrams">Basic usage and introduction to UML Models and Diagrams</h2>
+<p>What we want to achieve in this lab a short introduction how to use DevOps Model Architect. You will get an overview how to use the Modeling Perspective and a simple intro into UML Models and Diagrams.</p>
+<h3 id="start-devops-model-architect-and-switch-to-modeling-perspective">Start DevOps Model Architect and Switch to Modeling Perspective</h3>
+<ol>
+<li>Doubleclick on the icon for "IBM DevOps Model Architect" on the Desktop</li>
+</ol>
+<p><img alt="dma" src="../images/Lab_0/0000_0_1_Desktop_1.png" /></p>
+<ol>
+<li>Select a workspace folder for Eclipse. You can for example call it <code>dma_workspace_YOURNAME</code>.</li>
+</ol>
+<p><img alt="Eclipse Workspace Dialog" src="../images/Lab_1/0000_1_Workspace_Dialog.png" /></p>
+<ol>
+<li>The first time you open a new workspace you will get the Welcome Page. Close it by pressing the <strong>Workbench</strong> button in the upper right corner.</li>
+</ol>
+<p><img alt="Welcome Page" src="../images/Lab_1/0000_1_Eclipse_Welcome.png" /></p>
+<ol>
+<li>Next switch to the Modeling Perspective</li>
+<li>
+<p>Click on the Menu "Window" on top of Eclipse</p>
+<p><img alt="Menu Window" src="../images/Lab_1/0000_1_Perspective_1.png" /></p>
+</li>
+<li>
+<p>Click on Open Perspective then on Other</p>
+<p><img alt="Open Perspective Other" src="../images/Lab_1/0000_1_Perspective_2.png" /></p>
+</li>
+<li>
+<p>Dialog opens with list of perspectives</p>
+<p><img alt="Open Perspective Other" src="../images/Lab_1/0000_1_Perspective_3.png" /></p>
+</li>
+<li>
+<p>Scroll down and Select "Modeling" from the list</p>
+<p><img alt="Open Perspective Other" src="../images/Lab_1/0000_1_Perspective_4.png" /></p>
+</li>
+<li>
+<p>The Modeling Perspetive opens. You can also switch Perspectives using the icon on the top right corner</p>
+<p><img alt="Open Perspective Other" src="../images/Lab_1/0000_1_Perspective_5.png" /></p>
+</li>
+</ol>
+<h3 id="create-a-project">Create a project</h3>
+<ol>
+<li>Click on Create a new Model Project or Create Project</li>
+</ol>
+<p><img alt="Create a new Project" src="../images/Lab_1/0001_1_Create_Model_Project.png" /></p>
+<p><img alt="Create a new Project" src="../images/Lab_1/0001_1_Create_Project.png" /></p>
+<ol>
+<li>In the case you selected "Create a Project" a wizard will be shown.</li>
+<li>Search and select the modeling project type</li>
+</ol>
+<p><img alt="Select Projecttype" src="../images/Lab_1/0001_2_SelectProjectType.png" /></p>
+<p><img alt="Select Modelingproject" src="../images/Lab_1/0001_3_ModelingProject.png" /></p>
+<ol>
+<li>Provide a name for your new project.</li>
+</ol>
+<p><img alt="Projectname" src="../images/Lab_1/0001_4_ProjectName.png" /></p>
+<ol>
+<li>Select "General" from Categegories and "Blank Package" from Templates</li>
+</ol>
+<p><img alt="BlankPackage" src="../images/Lab_1/0001_5_BlankPackage.png" /></p>
+<ol>
+<li>Have a look at your freshly created new Project</li>
+</ol>
+<p><img alt="Freshly created Project" src="../images/Lab_1/0001_6_NewlyCreatedProject.png" /></p>
+<h3 id="basic-uml-models-and-basic-uml-diagrams">Basic UML Models and Basic UML Diagrams</h3>
+<ol>
+<li>If Project is collapsed, click on the &gt; symbols to expand Project and Elements</li>
+</ol>
+<p><img alt="Project Explorer" src="../images/Lab_1/0001_7_project_explorer.png" /></p>
+<p><img alt="Uncollapse Project" src="../images/Lab_1/0001_8_uncollapse_project.png" /></p>
+<p><img alt="Uncollapse Models" src="../images/Lab_1/0001_9_uncollapse_models.png" /></p>
+<ol>
+<li>Add new Class to Model by right clicking the Package and select the class entry in the UML menu</li>
+</ol>
+<p><img alt="Right Click on Package" src="../images/Lab_1/0002_1_add_uml_element.png" /></p>
+<p><img alt="Right Click on Package" src="../images/Lab_1/0002_2_add_class.png" /></p>
+<ol>
+<li>This creates a fresh new class. Name this new class "Customer"</li>
+</ol>
+<p><img alt="Newly created class" src="../images/Lab_1/0002_3_newly_created_class.png" /></p>
+<p><img alt="name class Customer" src="../images/Lab_1/0002_4_name_class.png" /></p>
+<ol>
+<li>Next add a new attribute to this class using the context menu of the element and name it "custID"</li>
+</ol>
+<p><img alt="add attribute to class" src="../images/Lab_1/0002_5_add_attribute_to_class.png" /></p>
+<p><img alt="newly created attribute" src="../images/Lab_1/0002_6_newly_created_attribute.png" /></p>
+<p><img alt="name attribute" src="../images/Lab_1/0002_7_name_attribute.png" /></p>
+<ol>
+<li>Now create an additional attribute and name it "custName"</li>
+</ol>
+<p><img alt="name attribute" src="../images/Lab_1/0002_8_add_another_attribute_and_name.png" /></p>
+<ol>
+<li>Create a new Diagram to manage all customer related model artifacts and name it "CustomerStore_Class"</li>
+</ol>
+<p><img alt="create new diagram for customer" src="../images/Lab_1/0003_1_add_class_diagram.png" /></p>
+<p><img alt="newly created diagram" src="../images/Lab_1/0003_2_newly_created_diagram.png" /></p>
+<p><img alt="name the new diagram" src="../images/Lab_1/0003_3_name_diagram.png" /></p>
+<ol>
+<li>Add our "Customer" class to this diagram by using the context menu of the item</li>
+</ol>
+<p><img alt="add class to diagram using context menu" src="../images/Lab_1/0003_4_add_existing_class_to_diagram.png" /></p>
+<p><img alt="class is added to diagram" src="../images/Lab_1/0003_5_existing_class_added.png" /></p>
+<ol>
+<li>Don't forget to save all your changes!</li>
+</ol>
+<h3 id="how-to-import-existing-artifacts">How to import existing artifacts</h3>
+<ol>
+<li>Right click Project to open context menu and select Import</li>
+</ol>
+<p><img alt="Context Menue for importing" src="../images/Lab_1/0004_1_ImportArtifact.png" /></p>
+<ol>
+<li>In this lab we want to import from the filesystem, please select "file system" in the wizard dialog</li>
+</ol>
+<p><img alt="Wizard - select &quot;file system&quot;" src="../images/Lab_1/0004_2_ImportFileSystem.png" /></p>
+<p>click on <strong>Next</strong>
+3. In the file system dialog browse for the "Simple-Model" folder from your repository</p>
+<p><img alt="File System dialog" src="../images/Lab_1/0004_3_SelectDirectory_1.png" /></p>
+<p>click on <strong>Browse</strong> and select "Simple-Model"</p>
+<p><img alt="Select folder" src="../images/Lab_1/0004_3_SelectDirectory_2.png" /></p>
+<p>click on <strong>Open</strong>
+4. The Import dialog opens</p>
+<p><img alt="Import Simple-Model" src="../images/Lab_1/0004_4_ImportModel_1.png" /></p>
+<ol>
+<li>Select the folder on the left (checkbox) and the model file will be automatically selected.</li>
+</ol>
+<p><img alt="Import Simple-Model folder selected" src="../images/Lab_1/0004_4_ImportModel_2.png" /></p>
+<ol>
+<li>Click on <strong>Finish</strong> to start the import</li>
+<li>The modeling artifact is imported and "SimpleUMLModel" is shown.</li>
+</ol>
+<p><img alt="Import Result" src="../images/Lab_1/0004_5_ImportResult.png" /></p>
+<ol>
+<li>Double-click on the newly created Model and a migration dialog will open as the artifacts were created with older version.</li>
+</ol>
+<p><img alt="Profile Migration 1" src="../images/Lab_1/0004_6_OpenModel_1.png" /></p>
+<p>Just accept the default settings and the diagram will be opened</p>
+<p><img alt="open simple model 1" src="../images/Lab_1/0004_6_OpenModel_2.png" /></p>
+<ol>
+<li>To have a better view, right click on the canvas to open context menu and select "Arrange All"</li>
+</ol>
+<p><img alt="Arrange on canvas" src="../images/Lab_1/0004_6_OpenModel_3.png" /></p>
+<p><img alt="result of new arrangement" src="../images/Lab_1/0004_6_OpenModel_4.png" /></p>
+<h3 id="how-to-add-a-new-uml-artifact-to-existing-diagram">How to add a new UML artifact to existing diagram</h3>
+<ol>
+<li>Adding new UML artifacts to a diagram can be done by using the "Palette" or the context menue of the diagram.</li>
+<li>First we will use the "Palette"</li>
+<li>On the right side of DevOps Model Architect you will find the "Palette" menue.</li>
+<li>
+<p>Click on "Class" entry to get all UML class types available</p>
+<p><img alt="Add new Class from Palette" src="../images/Lab_1/0004_7_AddModelElement_1.png" /></p>
+</li>
+<li>
+<p>Drag and drop the "Class" element from the Palette to the open diagram.</p>
+</li>
+<li>
+<p>A fresh new class is added and the name is selected for change. Change the name to "APPF2"</p>
+<p><img alt="new class and name" src="../images/Lab_1/0004_7_AddModelElement_2.png" /></p>
+</li>
+<li>
+<p>Now we want to create a relationship from "APPF2" to "AppFunction1"</p>
+<ol>
+<li>click and drag the "incoming" icon to "AppFunction1"</li>
+</ol>
+<p><img alt="new class and name" src="../images/Lab_1/0004_7_AddModelElement_3.png" /></p>
+<p><img alt="new class and name" src="../images/Lab_1/0004_7_AddModelElement_4.png" /></p>
+</li>
+<li>
+<p>A new dialog opens and use "Create Instance" type</p>
+<p><img alt="new relation" src="../images/Lab_1/0004_7_AddModelElement_5.png" /></p>
+</li>
+<li>
+<p>The relation "create instance" is established between these two elements</p>
+<p><img alt="final relation" src="../images/Lab_1/0004_7_AddModelElement_6.png" /></p>
+</li>
+<li>
+<p>Do not forget to save your changes!</p>
+</li>
+</ol>
+<h2 id="conclusion-of-lab-1">Conclusion of Lab 1</h2>
+<p>In this Lab we have been introduced how to use DevOps Model Architect to create a project, work on simple diagrams and import existing artifacts.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.top", "navigation.tabs", "navigation.tabs.sticky", "toc.integrate"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>
