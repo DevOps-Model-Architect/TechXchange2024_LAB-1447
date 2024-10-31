@@ -4,6 +4,7 @@ theme:
   name: material
   language: en
   font: false
+  favicon: null
   features: 
     - navigation.top
     - navigation.tabs
@@ -15,8 +16,8 @@ theme:
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
-      primary: blue
-      accent: blue
+      primary: indigo
+      accent: teal
 
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
@@ -24,7 +25,7 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
       primary: indigo
-      accent: blue
+      accent: teal
 markdown_extensions:
   - admonition
 extra:
